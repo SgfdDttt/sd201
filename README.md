@@ -11,7 +11,11 @@ This repository contains files for the lab session of SD201.
 
 # Installation
 You need python 3. Feel free to create a virtual environment before running pip.
+
 `pip install -r requirements.txt`
+
 `git clone https://github.com/SgfdDttt/sd201.git`
+
 `cd sd201`
+
 `make`
