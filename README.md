@@ -19,3 +19,38 @@ You need python 3. Feel free to create a virtual environment before running pip.
 `cd sd201`
 
 `make`
+
+This will put the Wikipedia files under `wikipedia/cleaned/` and the corresponding DBpedia files under `dbpedia/cleaned/`.
+
+# Evaluation metrics
+
+Usage for the eval metric is:
+
+`python scripts/eval.py --reference dbpedia/cleaned/<some_reference_kb>.txt --prediction <your_predicted_kb>`
+
+The predicted KB should contain one triple per line, in the format `<subject> <relation> <object>`. Look at reference DBpedia files (under `dbpedia/cleaned/`) if in doubt about the format. The output of the eval script is precision, recall and F1 score, for two settings:
+
+- Exact match. Here, a predicted triple if counted as correct if it exactly matches a triple in the reference KB. This is a very strict metric.
+
+- Soft match. This computes a similarity score for each pair of (predicted\_triple, reference\_triple). On that basis,
+
+  - precision is the sum of the highest similarity (to a reference triple) for each predicted triple, divided by the number of predicted triples.
+
+  - recall is the sum of the highest similarity (to a predicted triple) for each reference triple, divided by the number of reference triples.
+
+The similarity score of two triples is a number between 0 and 1, and is based on the edit distance between their subjects, relations and objects. The closer the string representations, the higher the similarity score. The soft match metric will give partial credit to triples that are almost right. For reference, here are a few similarity scores:
+
+\<Ada\_Lovelace\> \<child\> \<Anne\_Blunt,\_15th\_Baroness\_Wentworth\> &nbsp; \<Lovelace\> \<child\> \<Anne\_Blunt,\_15th\_Baroness\_Wentworth\> &nbsp; 0.8992886260452183
+
+\<Ada\_Lovelace\> \<child\> \<Ralph\_King-Milbanke,\_2nd\_Earl\_of\_Lovelace\> &nbsp; \<Lady\_Lovelace\> \<child\> \<Ralph\_King-Milbanke\> &nbsp; 0.7469007910928608
+
+\<Ada\_Lovelace\> \<spouse\> \<William\_King-Noel,\_1st\_Earl\_of\_Lovelace\> &nbsp; \<Ada\_Lovelace\> \<married\> \<William\_King-Noel,\_1st\_Earl\_of\_Lovelace\> &nbsp; 0.5227579585747103
+
+
+Additional arguments to the `script/eval.py`:
+
+- `alignment`: whether to print the alignment used for the soft match scores.
+
+- `significant`: the number of digits after the comma for metric scores.
+
+If in doubt, run `python scripts/eval.py -h`.
