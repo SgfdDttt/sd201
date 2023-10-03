@@ -40,11 +40,11 @@ The predicted KB should contain one triple per line, in the format `<subject> <r
 
 The similarity score of two triples is a number between 0 and 1, and is based on the edit distance between their subjects, relations and objects. The closer the string representations, the higher the similarity score. The soft match metric will give partial credit to triples that are almost right. For reference, here are a few similarity scores:
 
-\<Ada\_Lovelace\> \<child\> \<Anne\_Blunt,\_15th\_Baroness\_Wentworth\> &nbsp; \<Lovelace\> \<child\> \<Anne\_Blunt,\_15th\_Baroness\_Wentworth\> &nbsp; 0.8992886260452183
+\<Ada\_Lovelace\> \<child\> \<Anne\_Blunt,\_15th\_Baroness\_Wentworth\> --- \<Lovelace\> \<child\> \<Anne\_Blunt,\_15th\_Baroness\_Wentworth\> --- 0.8992886260452183
 
-\<Ada\_Lovelace\> \<child\> \<Ralph\_King-Milbanke,\_2nd\_Earl\_of\_Lovelace\> &nbsp; \<Lady\_Lovelace\> \<child\> \<Ralph\_King-Milbanke\> &nbsp; 0.7469007910928608
+\<Ada\_Lovelace\> \<child\> \<Ralph\_King-Milbanke,\_2nd\_Earl\_of\_Lovelace\> --- \<Lady\_Lovelace\> \<child\> \<Ralph\_King-Milbanke\> --- 0.7469007910928608
 
-\<Ada\_Lovelace\> \<spouse\> \<William\_King-Noel,\_1st\_Earl\_of\_Lovelace\> &nbsp; \<Ada\_Lovelace\> \<married\> \<William\_King-Noel,\_1st\_Earl\_of\_Lovelace\> &nbsp; 0.5227579585747103
+\<Ada\_Lovelace\> \<spouse\> \<William\_King-Noel,\_1st\_Earl\_of\_Lovelace\> --- \<Ada\_Lovelace\> \<married\> \<William\_King-Noel,\_1st\_Earl\_of\_Lovelace\> --- 0.5227579585747103
 
 
 Additional arguments to the `script/eval.py`:
