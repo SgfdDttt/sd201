@@ -54,3 +54,19 @@ Additional arguments to the `script/eval.py`:
 - `significant`: the number of digits after the comma for metric scores.
 
 If in doubt, run `python scripts/eval.py -h`.
+
+# IE tools to try out
+
+- spacy.io
+
+- NLTK https://www.nltk.org/
+
+- Regexps https://regex101.com/
+
+- Stanford CoreNLP https://corenlp.run/
+
+- OpenIE (in Stanford CoreNLP)
+
+- FrameNet https://framenet.icsi.berkeley.edu/
+
+Run them, use the eval script, look at the errors, try to tweak the method to increase the scores.
