@@ -237,10 +237,10 @@ args = parser.parse_args()
 reference_triples = set(map(parse_triple, args.reference))
 predicted_triples = set(map(parse_triple, args.prediction))
 
+# compute metrics
 alignment = alignment_matrix(predicted_triples, reference_triples)
 sp, pargs = soft_precision(alignment)
 sr, rargs = soft_recall(alignment)
-
 metrics = {
         'exact match': {
             'precision': precision(predicted_triples, reference_triples),
@@ -253,11 +253,13 @@ metrics = {
             'fscore': soft_fscore(sp,sr)
             }
         }
+# format and print metrics
 for major_key in metrics:
     for minor_key, value in metrics[major_key].items():
         metrics[major_key][minor_key] = format_number(value) if isinstance(value, float) else value
-
 print(json.dumps(metrics, sort_keys=True, indent=2))
+
+# optionally print alignment
 if args.alignment:
     print('alignment soft precision'.upper())
     print('"<prediction>": "<reference>"')
@@ -265,3 +267,11 @@ if args.alignment:
     print('alignment soft recall'.upper())
     print('"<reference>": "<prediction>"')
     print(alignment_to_string(rargs))
+
+"""for x, y in [
+        ("<Ada_Lovelace> <child> <Anne_Blunt,_15th_Baroness_Wentworth>","<Lovelace> <child> <Anne_Blunt,_15th_Baroness_Wentworth>"),
+        ("<Ada_Lovelace> <child> <Ralph_King-Milbanke,_2nd_Earl_of_Lovelace>", "<Lady_Lovelace> <child> <Ralph_King-Milbanke>"),
+        ("<Ada_Lovelace> <spouse> <William_King-Noel,_1st_Earl_of_Lovelace>", "<Ada_Lovelace> <married> <William_King-Noel,_1st_Earl_of_Lovelace>")
+        ]:
+    print(x,y)
+    print(triple_similarity(parse_triple(x),parse_triple(y)))"""
