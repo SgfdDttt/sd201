@@ -30,7 +30,7 @@ Usage for the eval metric is:
 
 The predicted KB should contain one triple per line, in the format `<subject> <relation> <object>`. Look at reference DBpedia files (under `dbpedia/cleaned/`) if in doubt about the format. The output of the eval script is precision, recall and F1 score, for two settings:
 
-- Exact match. Here, a predicted triple if counted as correct if it exactly matches a triple in the reference KB. This is a very strict metric.
+- Exact match. Here, a predicted triple is counted as correct if it exactly matches a triple in the reference KB. This is a very strict metric.
 
 - Soft match. This computes a similarity score for each pair of (predicted\_triple, reference\_triple). On that basis,
 
