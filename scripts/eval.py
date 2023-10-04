@@ -26,9 +26,9 @@ def valid_kbe(string):
 
 def parse_triple(string):
     # this is the converse of triple_to_string
-    assert isinstance(string, str)
+    assert isinstance(string, str), string
     triple = tuple(string.split())
-    assert len(triple) == 3
+    assert len(triple) == 3, triple
     return triple
 
 def triple_to_string(triple):
