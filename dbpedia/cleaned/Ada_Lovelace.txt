@@ -1,0 +1,7 @@
+<Ada_Lovelace> <child> <Anne_Blunt,_15th_Baroness_Wentworth>
+<Ada_Lovelace> <child> <Byron_King-Noel,_Viscount_Ockham>
+<Ada_Lovelace> <child> <Ralph_King-Milbanke,_2nd_Earl_of_Lovelace>
+<Ada_Lovelace> <deathPlace> <Marylebone>
+<Ada_Lovelace> <honorificPrefix> <The_Right_Honourable>
+<Ada_Lovelace> <knownFor> <Computing>
+<Ada_Lovelace> <spouse> <William_King-Noel,_1st_Earl_of_Lovelace>

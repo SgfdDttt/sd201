@@ -1,0 +1,17 @@
+<Irène_Joliot-Curie> <academicDiscipline> <Chemistry>
+<Irène_Joliot-Curie> <academicDiscipline> <Physics>
+<Irène_Joliot-Curie> <almaMater> <University_of_Paris>
+<Irène_Joliot-Curie> <award> <Nobel_Prize_for_Chemistry>
+<Irène_Joliot-Curie> <child> <Hélène_Langevin-Joliot>
+<Irène_Joliot-Curie> <child> <Pierre_Joliot>
+<Irène_Joliot-Curie> <children> <Hélène_Langevin-Joliot>
+<Irène_Joliot-Curie> <children> <Pierre_Joliot>
+<Irène_Joliot-Curie> <doctoralAdvisor> <Paul_Langevin>
+<Irène_Joliot-Curie> <field> <Chemistry>
+<Irène_Joliot-Curie> <field> <Physics>
+<Irène_Joliot-Curie> <institution> <Curie_Institute_(Paris)>
+<Irène_Joliot-Curie> <institution> <University_of_Paris>
+<Irène_Joliot-Curie> <prizes> <Nobel_Prize_for_Chemistry>
+<Irène_Joliot-Curie> <spouse> <Frédéric_Joliot-Curie>
+<Irène_Joliot-Curie> <workplaces> <Curie_Institute_(Paris)>
+<Irène_Joliot-Curie> <workplaces> <University_of_Paris>

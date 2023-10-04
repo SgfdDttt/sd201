@@ -1,0 +1,15 @@
+<Frédéric_Joliot-Curie> <academicDiscipline> <Chemistry>
+<Frédéric_Joliot-Curie> <academicDiscipline> <Physics>
+<Frédéric_Joliot-Curie> <almaMater> <University_of_Paris>
+<Frédéric_Joliot-Curie> <award> <Fellow_of_the_Royal_Society>
+<Frédéric_Joliot-Curie> <award> <Hughes_Medal>
+<Frédéric_Joliot-Curie> <award> <Nobel_Prize_for_Chemistry>
+<Frédéric_Joliot-Curie> <birthPlace> <Paris>
+<Frédéric_Joliot-Curie> <child> <Hélène_Langevin-Joliot>
+<Frédéric_Joliot-Curie> <child> <Pierre_Joliot>
+<Frédéric_Joliot-Curie> <children> <Hélène_Langevin-Joliot>
+<Frédéric_Joliot-Curie> <deathPlace> <Paris>
+<Frédéric_Joliot-Curie> <field> <Chemistry>
+<Frédéric_Joliot-Curie> <field> <Physics>
+<Frédéric_Joliot-Curie> <knownFor> <Atomic_nuclei>
+<Frédéric_Joliot-Curie> <spouse> <Irène_Joliot-Curie>

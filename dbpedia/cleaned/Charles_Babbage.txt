@@ -1,0 +1,16 @@
+<Charles_Babbage> <academicDiscipline> <Political_economy>
+<Charles_Babbage> <almaMater> <Peterhouse,_Cambridge>
+<Charles_Babbage> <child> <Benjamin_Herschel_Babbage>
+<Charles_Babbage> <deathPlace> <Marylebone>
+<Charles_Babbage> <influenced> <Ada_Lovelace>
+<Charles_Babbage> <influenced> <John_Stuart_Mill>
+<Charles_Babbage> <influenced> <Karl_Marx>
+<Charles_Babbage> <influencedBy> <Gaspard_Monge>
+<Charles_Babbage> <influencedBy> <John_Herschel>
+<Charles_Babbage> <influencedBy> <Robert_Woodhouse>
+<Charles_Babbage> <influences> <Gaspard_Monge>
+<Charles_Babbage> <influences> <John_Herschel>
+<Charles_Babbage> <influences> <Robert_Woodhouse>
+<Charles_Babbage> <knownFor> <Difference_engine>
+<Charles_Babbage> <relatives> <William_Wolryche-Whitmore>
+<Charles_Babbage> <workInstitutions> <Trinity_College,_Cambridge>
