@@ -61,7 +61,7 @@ If in doubt, run `python scripts/eval.py -h`.
 
 - NLTK https://www.nltk.org/
 
-- Regexps https://regex101.com/
+- Regular expressions https://regex101.com/
 
 - Stanford CoreNLP https://corenlp.run/
 
